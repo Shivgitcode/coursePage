@@ -30,7 +30,7 @@ function App() {
     <div>
       <Navbar />
       <Filter filterData={filterData} />
-      {loading ? <h1>loading...</h1> : <Cards data={courses}></Cards>}
+      {loading ? <h1>loading...</h1> : <Cards data={courses} />}
     </div>
   );
 }

@@ -1,9 +1,11 @@
 import { FcLike } from "react-icons/fc";
-const Card = ({ data }) => {
+const CourseCard = (props) => {
+  let course = props.course;
+
   return (
     <div>
       <div>
-        <img src={data.image.url} alt="" />
+        <img src={course.image.url} alt="" />
         <div>
           <button>
             <FcLike fontSize="1.75rem"></FcLike>
@@ -11,11 +13,11 @@ const Card = ({ data }) => {
         </div>
       </div>
       <div>
-        <p>{data.title}</p>
-        <p>{data.description}</p>
+        <p>{course.title}</p>
+        <p>{course.description}</p>
       </div>
     </div>
   );
 };
 
-export default Card;
+export default CourseCard;
